@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+
+a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
+a:after {
+    background-color: #8f8cad;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #bdb9b4;
+}
+
+section {
+    margin-bottom: 120px;
+}
+.navbar-brand img {
+    height: 60px;
+}
+
+header .nav-item {
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    margin-left: 50px;
+    color: #524f4a;
+    font-size: 28px;
+}
+
+.foto {
+    width: inherit;
+    filter: grayscale(20%);
+    border-radius: 12px;
+    box-shadow: 3px -2px 5px 1px rgba(143,137,143,.37);
+}
+
+.foto:hover {
+    filter: grayscale(0%);
+    filter: brightness(110%);
+}
+
+
+
+/* skils spoler */
+.service__content-tabTitle {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+
+    /* .service__content-tabTitle.active {
+        margin-bottom: 0;
+    } */
+        .service__content-tabTitle.active::before {
+            transform: rotate(40deg);
+        }
+        .service__content-tabTitle.active::after {
+            transform: rotate(-40deg);
+        }
+
+    .service__content-tabTitleText {
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .service__content-tabTitle::before, 
+        .service__content-tabTitle::after {
+            content:'';
+            width: 14px;
+            height: 2px;
+            background-color:#cccccc;
+            position: absolute;
+            top: 33px;
+            transition: all 0.3s ease 0s;
+        }
+        .service__content-tabTitle:before {
+            transform: rotate(-40deg);
+            right:20px
+        }
+        .service__content-tabTitle:after {
+            transform: rotate(40deg);
+           right: 30px;
+        }
+
+
+.service__content-tabText {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    display: none;
+}
+
+/*  */
+
+
+
+.skills {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 12px;
+    color: aliceblue;
+    background: rgb(48, 47, 47);
+}
+
+.html_css { width: 30%; }
+.wp { width: 20%; }
+.js { width: 20%; }
+.sass { width: 35%; }
+.vue { width: 25%; }
+
+
+.item-filling img{
+    max-height: 150px;
+    margin-bottom: 33px;
+}
+
+.item-border {
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 3px -2px 5px 1px rgba(143,137,143,.37);
+}
+
+.item-border:hover {
+    background-color: rgba(247, 245, 245, 0.075);
+    opacity: 0.7;
+    
+}
+
+.item-filling {
+    font-size: 18px;
+    padding: 10%;
+}
+
+.calc:hover,.online_store:hover,.lending:hover {
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    border: 4px solid black;
+    font-style: italic;
+
+}
+
+
+.calc a,.online_store a,.lending a{ 
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 4px;
+}
+
+
+.end{
+    margin-top: 50px;
+    background-color: #689CD2;
+}
+
+.end img {
+    width: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contact img {
+    max-width: 280px;
+}
+
+.contact__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__text {
+    width: 50%;
+}
+
+.contact__foto {
+    width: 30%;
+}
+
+.modalContacts {
+    color: #fff;
+    font-size: 18px;
+}
+
+.modalContacts__title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.writeAutor {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 25px;
+    position: fixed;
+    top: 80%;
+    right: 5%;
+    background: rgb(90, 90, 90);
+    border: 1px solid rgb(90, 90, 90);;
+    border-radius: 14px;
+    box-shadow: 3px -2px 5px 1px rgba(143,137,143,.37);
+    color: #fff;
+}
+
+.writeAutor a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#portfolio {
+    margin-top: 90px;
+}
+
+.tabs__items {
+    margin-top: 60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs__block {
+    display: none;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    #tab__01 {
+        display: flex;
+    }
+
+    .tabs__block-items {
+        flex-basis: 282px;
+    }
+
+
+
+    
+    /*media*/
+
+@media (max-width: 1530px) {
+    body {
+            font-size: 18px;
+        }
+        .pitem-filling_item img{
+            height: 130px;
+            margin-bottom: 25px;
+        }
+    
+    }
+    
+    @media (max-width: 1300px) {
+    
+        .my_foto {
+            height: 490px;
+        }
+        .About_Me {
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+    
+        .calc a,.online_store a,.lending a{  
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+    
+        .contact__text {
+            width: 65%;
+        }
+        
+        .contact__foto {
+            width: 25%;
+        }
+    
+        }
+    
+    
+    @media (max-width: 1100px) {
+    
+        .tabs__block-items {
+            flex-basis: 262px;
+        }
+    
+    
+    body {
+            font-size: 14px;
+        }
+           
+        .calc a,.online_store a,.lending a{  
+            font-size: 12px;
+        }
+        .foto {
+            margin-top: 50px;
+        }
+    
+    
+    
+    }
+    
+    @media (max-width: 900px) {
+    body {
+            font-size: 12px;
+        }
+    
+       .calc a,.online_store a,.lending a{  
+            font-size: 10px;
+        }
+    
+        .contact__text {
+            width: 85%;
+        }
+        
+        .contact__foto {
+            display: none;
+    }
+    .tabs__block {
+        justify-content: space-around;
+    }
+
+    
+    }
+    
+    
+    @media (max-width: 600px) {
+        .tabs__block {
+            justify-content: center;
+        }
+       
+        .abimg {
+            display: none;
+        }
+        .calc a,.online_store a,.lending a{  
+            font-size: 10px;
+        }
+    
+        .portfolio_item img{
+            height: 40px;
+        }
+    }
+    
+    
+    
+    
+
+/* slider */
+    .slider {
+        position: relative;
+    }
+    .slider .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+        width: 20px;
+        height: 37px;
+        border:none;
+    }
+
+        .slider .slick-arrow.slick-prev {
+            left: 12px;
+            background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+
+        }
+        .slider .slick-arrow.slick-next {
+            right: 12px;
+            background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+        }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slider__item img {
+        width: inherit;
+        border-radius: 6px;
+    }
+
+    .slider .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slider .slick-dots li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .slider .slick-dots button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color:#bebebe;
+        border: 1px solid #bebebe;
+        border-radius: 50%;
+    }
+
+    .slider .slick-dots li.slick-active button {
+        background-color: transparent;
+        border: 1px solid black;
+    } 
