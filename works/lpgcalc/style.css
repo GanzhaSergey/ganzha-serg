@@ -1,0 +1,109 @@
+h1 {
+    text-align: center;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.Info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid rgb(199, 197, 197);
+}
+
+.Info__text {
+    display: flex;
+    flex-basis: 360px;
+}
+
+.Info__logo {
+    color: aliceblue;
+    padding: 20px;
+    font-size: 60px;
+    display: inline-block;
+    background: blue;
+}
+
+.Info__title {
+    color: #173152;
+    padding-left: 30px;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+.Info__data {
+    margin-right: 30px;
+    display: flex;
+    flex-basis: 420px;
+}
+
+.Info__img {
+    color: #aaabac;
+    line-height: 100px;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 32px;
+}
+
+.Info__input {
+    line-height: 80px;
+    position: relative;
+    flex-basis: 200px;
+}
+
+.Info__input-item {
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(154, 180, 250);
+
+}
+
+.Info__input-item:hover {
+    border-bottom: 3px solid rgb(77, 124, 253);
+}
+
+.Info__input-itemDown1 {
+    color: #aaabac;
+    position: absolute;
+    left: 0px;
+    top: 22px;
+}
+
+.Info__input-itemDown2 {
+    color: #aaabac;
+    position: absolute;
+    right: 0px;
+    top: 22px;
+}
+
+#res {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: blue;
+    color: aliceblue;
+}
+
+.result {
+    color: #606161;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
