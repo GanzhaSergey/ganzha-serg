@@ -1,0 +1,38 @@
+@media screen and (max-width: 1000px) {
+    .this-is p {
+        font-size: 13px;
+    }
+    .fp__banner-p {
+        font-size: 14px;
+    }
+    .fp__banner-button {
+        font-size: 14px;
+        height: 35px; 
+        padding: 8px 20px;
+    }
+    .impressed-bg img {
+        display: none;
+    }
+    .testimonials__text-text {
+        font-size: 12px;
+    }
+    .skills {
+        left: 130px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .this-is p {
+        font-size: 12px;
+    }
+    .fp__banner-p {
+        font-size: 12px;
+    }
+    .testimonials__text-text {
+        font-size: 10px;
+    }
+    .already-love-us {
+        margin-top: 300px;
+    }
+}
