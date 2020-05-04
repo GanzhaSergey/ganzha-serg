@@ -6,10 +6,12 @@ html, body {
 ul, li { list-style: none; }
 a { text-decoration: none; }
 
-section {
-    max-width: 1121px;
+.container {
+    max-width: 1120px;
     margin: 0 auto;
 }
+
+
  /* fonts */
 .playfair { font-family: 'Playfair Display', serif; }
 .josefin-light { font-family: 'Josefin Sans', sans-serif; }
@@ -97,14 +99,12 @@ section {
 }
 
 .bananas {
-    margin: 85px auto;
+    margin: 85px 0;
     background: url(../lemon/img/Rectangle\ 1.png) no-repeat center bottom;
-/* 
-    background: url(../img/2-layers.png) no-repeat; */
     background-size: cover;
     width: 100%;
 
-    height: 440px;
+    height: 460px;
 }
 
 .bananas__logo,
@@ -138,7 +138,6 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
   
-
 }
 
 .salats__Item-title {
@@ -250,7 +249,7 @@ section {
 /* media */
 
 @media screen and (max-width: 1200px) {
-    section {
+    .container {
         max-width: 1000px;
     }
      .mainLogo {
@@ -270,7 +269,7 @@ section {
     }
 
 @media screen and (max-width: 1000px) {
-    section {
+    .container {
         max-width: 800px;
     }
    
@@ -290,10 +289,6 @@ section {
     .icon {
         display: inline-block;
     }
-    
-    /* .findMin {
-        display: block;
-    } */
 
     .bananas2__title {
         font-size: 26px;
@@ -313,11 +308,9 @@ section {
 
 
 @media screen and (max-width: 900px) {
-    section {
+    .container {
         max-width: 700px;
     }
-
-   
 
 
     .bananas__title {
@@ -333,12 +326,11 @@ section {
 }
 
 @media screen and (max-width: 800px) {
-    section {
-        max-width: 650px;
+    .container {
+        max-width: 720px;
     }
-    
     .bananas2__recipe {
-        font-size: 13px;
+        font-size: 15px;
     }
     .bananas2__photo img{
         display: none;
@@ -346,10 +338,36 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-    section {
-        max-width: 550px;
+    .container {
+        max-width: 600px;
     }
-    .bananas2__title {
-        font-size: 18px;
+    .bananas__title {
+        font-size: 16px;
+    }
+    .menu__find {
+        display: none;
     }
 }    
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 500px;
+    }
+    .bananas__text {
+        font-size: 14px;
+    }
+}    
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 400px;
+    }
+    .bananas__text {
+        font-size: 12px;
+    }
+}    
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 380px;
+    }
+} 
