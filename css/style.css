@@ -153,6 +153,22 @@ header .nav-item {
 .vue { width: 25%; }
 
 
+
+/* Ab_me */
+    .about__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        .about__content-text {
+            max-width: 49%;
+        }
+        .about__content-img {
+            max-width: 49%;
+        }
+
+  
+
 .item-filling img{
     max-height: 150px;
     margin-bottom: 33px;
@@ -212,16 +228,16 @@ header .nav-item {
 
 .contact__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.contact__text {
-    width: 50%;
-}
+    .contact__text {
+        max-width: 50%;
+    }
+    .contact__foto {
+        max-width: 30%;
+    }
 
-.contact__foto {
-    width: 30%;
-}
 
 .modalContacts {
     color: #fff;
@@ -290,6 +306,10 @@ header .nav-item {
     body {
             font-size: 18px;
         }
+
+        .writeAutor{
+            display: none;
+        }
         .pitem-filling_item img{
             height: 130px;
             margin-bottom: 25px;
@@ -297,34 +317,22 @@ header .nav-item {
     
     }
     
-    @media (max-width: 1300px) {
-    
-        .my_foto {
-            height: 490px;
+    @media (max-width: 1200px) {
+        .about__content-img {
+            display: none;
         }
-        .About_Me {
-            font-size: 16px;
+        .about__content-text {
+            max-width: 80%;
         }
-
-        body {
-            font-size: 16px;
-        }
-    
-        .calc a,.online_store a,.lending a{  
-            font-size: 16px;
-            letter-spacing: 3px;
-        }
-    
-        .contact__text {
-            width: 65%;
-        }
-        
         .contact__foto {
-            width: 25%;
+            display: none;
         }
-    
+        .contact__text {
+            max-width: 80%;
         }
-    
+    }
+
+
     
     @media (max-width: 1100px) {
     
@@ -334,36 +342,25 @@ header .nav-item {
     
     
     body {
-            font-size: 14px;
-        }
-           
+            font-size: 16px;
+        }         
         .calc a,.online_store a,.lending a{  
             font-size: 12px;
         }
-        .foto {
-            margin-top: 50px;
-        }
-    
+
     
     
     }
     
     @media (max-width: 900px) {
     body {
-            font-size: 12px;
+            font-size: 14px;
         }
     
        .calc a,.online_store a,.lending a{  
             font-size: 10px;
         }
     
-        .contact__text {
-            width: 85%;
-        }
-        
-        .contact__foto {
-            display: none;
-    }
     .tabs__block {
         justify-content: space-around;
     }
@@ -376,7 +373,6 @@ header .nav-item {
         .tabs__block {
             justify-content: center;
         }
-       
         .abimg {
             display: none;
         }
@@ -384,9 +380,12 @@ header .nav-item {
             font-size: 10px;
         }
     
-        .portfolio_item img{
-            height: 40px;
-        }
+    }
+
+    @media (max-width: 500px) {
+        body {
+                font-size: 10px;
+            }
     }
     
     
