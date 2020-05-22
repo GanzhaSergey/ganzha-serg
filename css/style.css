@@ -459,6 +459,9 @@ footer {
         .tabs__block-items {
             flex-basis: 263px;
         }
+        .tabs__items {
+            font-size: 16px;
+        }
     }
 
     @media (max-width: 767px) {
@@ -476,7 +479,7 @@ footer {
             font-size: 12px;
         }
         .tabs__items {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
