@@ -464,6 +464,7 @@ footer {
     @media (max-width: 767px) {
         .container {
             max-width: none;
+            padding: 0 15px;
         }
         .writeAutor {
             display: none;
@@ -474,8 +475,8 @@ footer {
         p{
             font-size: 12px;
         }
-        .container {
-            padding: 0 15px;
+        .tabs__items {
+            font-size: 16px;
         }
     }
 
