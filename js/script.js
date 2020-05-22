@@ -51,12 +51,7 @@ $(document).ready(function() {
     dots:true,
     adaptiveHeight:true,
     speed:1000,
-    initialSlide:3,
-    autoplay:true,
-    autoplaySpeed:2600,
-    pauseOnFocus:true,
-    pauseOnHover:true,
-    pauseOnDotsHover:true
+    initialSlide:3
     });
 
 
@@ -66,6 +61,13 @@ $('.wp').delay(4000).animate({'width':'70%'},3000);
 $('.js').delay(7000).animate({'width':'80%'},3000);
 $('.sass').delay(10000).animate({'width':'70%'},3000);
 $('.vue').delay(13000).animate({'width':'40%'},2000);
+
+// burger menu
+  $('.header__burger').click(function(event) {
+    $('.header__burger, .header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
 
   });
 
