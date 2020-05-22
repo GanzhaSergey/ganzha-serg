@@ -474,6 +474,9 @@ footer {
         p{
             font-size: 12px;
         }
+        .container {
+            padding: 0 15px;
+        }
     }
 
     
