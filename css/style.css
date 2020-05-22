@@ -309,10 +309,10 @@ footer {
         justify-content: space-between;
     }
         .about__content-right {
-            flex: 0 1 49%;
+            flex: 0 1 46%;
         }
         .about__content-left {
-            flex: 0 1 49%;
+            flex: 0 1 46%;
         }
 
   
@@ -479,6 +479,9 @@ footer {
     @media (max-width: 767px) {
         .container {
             max-width: none;
+        }
+        .writeAutor {
+            display: none;
         }
     }
 
