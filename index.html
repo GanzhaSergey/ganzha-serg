@@ -14,7 +14,8 @@
     <meta name="keywords" content="portfolio site, Ganzha Sergey, portfolio site Ganzha Sergey">
    
 <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Source+Code+Pro" rel="stylesheet"> 
     <!-- fontawesome -->
@@ -24,39 +25,54 @@
 
 <body>
     <div class="container">
-        <!-- header menu -->
-        <header>
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                            <a href="#About_Me" class="nav-item scrollto">about Me</a>
-                            <a href="#education" class="nav-item scrollto">education</a>
-                            <a href="#portfolio" class="nav-item scrollto">portfolio</a>
-                            <a href="#contacts" class="nav-item scrollto">contacts</a>
-                    </ul>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <img src="img/1.jpg" alt="logo">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
                     </div>
-                </nav>
+                    <div class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="#About_Me" class="header__link scrollto">about</a>
+                            </li>
+                            <li>
+                                <a href="#education" class="header__link scrollto">education</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="header__link scrollto">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="header__link scrollto">contacts</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
 
+<div class="container">
         <!-- About_Me -->
         <section id="About_Me">
-            <h2>About Me</h2>
+          
+            <h2>About</h2>
+                <h5>Junior Front-End Developer (Html, Css, Bootstrap, WP, JS, jQuery, React)</h5>
                 <div class="about__content">
-                    <div class="about__content-text">
-                        <h5>Junior Front-End Developer (Html, Css, Bootstrap, WP, JS, jQuery, React)</h5>
-                        <hr>
+                    <div class="about__content-right">
                         <p>Name: Ganzha Sergey</p>
-                        <hr>
-                        <p>Age: 33 Years</p>
-                        <hr>
                         <p>Email: fahrerserg@gmail.com</p>
-                        <hr>
-                        <p>Phone: +380672791750</p>
-                        <hr>
+                    </div>
+                        <div class="about__content-left">
+                            <p>Age: 33 Years</p>
+                            <p>Phone: +380672791750</p>
+                        </div>
+                    </div> 
+
+
 
                             <div class="service__content-tab">
                             <div class="service__content-tabTitle">
@@ -76,18 +92,14 @@
                                 <div class="skills sass">Less 60%</div>
                                 <div class="skills vue">React 40%</div>
                             </div>
-                        </div>
-                    </div> 
-
-
-
-                <div class="about__content-img">
-                    <img class="foto" src="img/my_foto.png" alt="foto">
                 </div>
+                   
+
+           
         </section>
         
-<!--Education-->
-<section id="education">
+        <!--Education-->
+        <section id="education">    
     <h2>Education</h2>  
             <div>
                 <p>Years: 2003 - 2009 </p>
@@ -122,11 +134,10 @@
                     </div>
                     
             </div>
-</section>
+        </section>  
 
-
-<!--Portfolio-->
-<section id="portfolio">
+        <!--Portfolio-->
+        <section id="portfolio">
     <h2>portfolio</h2>
         <div id="tabs" class="tabs">
             <nav class="tabs__items">
@@ -464,31 +475,28 @@
 
         </div>
 
-</section>
+        </section>
 
-
-
-
-<!--Contacts-->
-<section id="contacts" class="contact">
-    <h2>Contacts</h2>
-        <div class="contact__row">
-            <div class="contact__text">
-                <p><i class="fas fa-battery-full"></i> Web: ganzha-serg.000webhostapp.com</p>
-                <hr>
-                <p><i class="far fa-envelope .clipboard" data-clipboard-target="#foo"></i> Email:</b>  fahrerserg@gmail.com </p>
-                <hr>
-                <p><i class="fas fa-mobile-alt"></i> Phone: +380 67 279 1750 </p>
-                <hr>
+        <!--Contacts-->
+        <section id="contacts" class="contact">
+        <h2>Contacts</h2>
+            <div class="contact__row">
+                <div class="contact__text">
+                    <p><i class="fas fa-battery-full"></i> Web: ganzha-serg.000webhostapp.com</p>
+                    <hr>
+                    <p><i class="far fa-envelope .clipboard" data-clipboard-target="#foo"></i> Email:</b>  fahrerserg@gmail.com </p>
+                    <hr>
+                    <p><i class="fas fa-mobile-alt"></i> Phone: +380 67 279 1750 </p>
+                    <hr>
+                </div>
+                <div class="contact__foto">
+                        <img src="img/contacts.png" alt="contacts">
+                </div>
             </div>
-            <div class="contact__foto">
-                    <img src="img/contacts.png" alt="contacts">
-            </div>
-        </div>
 
-</section>
-
+        </section>
 </div>
+
 <!-- footer -->
 <footer>
     <hr>
