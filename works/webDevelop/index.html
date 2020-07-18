@@ -13,11 +13,18 @@
         <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="menu">
+    <header class="header">
         <div class="container">
-            <div class="menu">
-                <div class="logo">Your Logo</div>
-                <div class="menu__items">
+            <div class="header__body">
+                <div class="header__logo">
+                    Your Logo
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+
+                <div class="header__menu">
+                    <ul class="header__list">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Servicing</a></li>
@@ -25,10 +32,12 @@
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact us</a></li>
                         <li><a href=""><i class="fas fa-search"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+    </header>
+
+
 
     <section id="webDevBanner">
         <div class="webDevBanner">
@@ -338,46 +347,63 @@
         <h1>Blog</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        <div class="row">
-            <div class="blogItems-img">
-                <img src="img/seo_img.jpg" alt="img">
+        <div class="blog__row">
+            <div class="row__items">
+                <div class="row__items-img">
+                    <img src="img/seo_img.jpg" alt="img">
+                </div>
+
+                <div class="row__items-text">
+                    <div class="blogItems__title-active">
+                        SEO Quis Vestibulum
+                    </div>
+                    <div class="blogItems__calendar">
+                        <i class="fas fa-calendar-alt"></i>14.0702017    <i class="far fa-file-image"></i> Development
+                    </div>
+                    <div class="blogItems__text">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</div>  
+                    </div>
             </div>
-            <div class="blogItems">
-                <div class="blogItems__title-active">
-                    SEO Quis Vestibulum
+        </div>   
+          
+        <div class="blog__row">
+           <div class="row__items"> 
+                <div class="row__items-text">
+                    <div class="blogItems__title">
+                        SEO Quis Vestibulum
+                    </div>
+                    <div class="blogItems__calendar">
+                        <i class="fas fa-calendar-alt"></i>14.0702017    <i class="far fa-file-image"></i> Development
+                    </div>
+                    <div class="blogItems__text">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                    </div>  
+                </div> 
+            
+
+                
+                <div class="blogItems-img"><img src="img/app_technology.jpg" alt="">
                 </div>
-                <div class="blogItems__calendar">
-                    <i class="fas fa-calendar-alt"></i>14.0702017    <i class="far fa-file-image"></i> Development
-                </div>
-                <div class="blogItems__text">
-                    Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</div>  
-                </div>
-            <div class="blogItems">
-                <div class="blogItems__title">
-                    SEO Quis Vestibulum
-                </div>
-                <div class="blogItems__calendar">
-                    <i class="fas fa-calendar-alt"></i>14.0702017    <i class="far fa-file-image"></i> Development
-                </div>
-                <div class="blogItems__text">
-                    Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
-                </div>  
             </div>
-                <div class="blogItems-img"><img src="img/app_technology.jpg" alt=""></div>
+
+
+
+        </div>
+
+        <div class="blog__row">
+            <div class="row__items"> 
                 <div class="blogItems-img">
                         <img src="img/imac-apple-mockup-app-38544.jpg" alt="">
-                    </div>
+                    </div> 
 
-
-                    <div class="blogItems">
+                    <div class="row__items-text">
                             <div class="blogItems__title">SEO Quis Vestibulum</div>
                             <div class="blogItems__calendar"><i class="fas fa-calendar-alt"></i>14.0702017    <i class="far fa-file-image"></i> Development</div>
                             <div class="blogItems__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </div>
-                    </div>
-
+                    </div> 
             </div>
+        </div>
 
-      
     </div>
 </section>
     <br>
