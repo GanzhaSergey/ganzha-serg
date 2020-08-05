@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     // modal Window
-    $('.writeAutor').click(function(){
+    $('.button_writeAutor').click(function(){
       $('#exampleModal').arcticmodal();
     })
     
