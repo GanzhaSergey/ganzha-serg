@@ -19,6 +19,7 @@ body, html {
     padding: 0 30px;
 }
 
+
 h2 {
     margin-bottom: 50px;
     font-family: 'Source Code Pro', monospace;
@@ -27,6 +28,43 @@ h2 {
     text-transform: uppercase;
     text-shadow: 3px 3px #bdb9b4;
 }
+
+
+/* main Screen*/
+.mainPage {
+    background: url(../img/background.jpg);
+    background-position: 0 0; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+
+ .mainPage__title {
+     display: block;
+     width: 100%;
+     position: absolute;
+     top: 40%;
+     color:#fff;
+     font-size: 92px;
+     z-index: 5;
+     text-align: center;
+ }
+
+ .mouse {
+    height: 50px;
+    width: 100%;
+    background: url(../img/mouse.png) top center no-repeat;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+ }
+
+ .mouse:hover { 
+    top: 80.5%;
+ }
+
+
 
 section {
     margin: 100px 0;
@@ -82,14 +120,14 @@ a:hover:after,a:focus:after {width: 100%;}
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  rgba(121, 121, 121, 1);
+    background-color:  rgb(161, 157, 157);
     z-index: 2;
 }
 .header__body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     align-items: center;
 }
 .header__logo {
@@ -123,8 +161,16 @@ a:hover:after,a:focus:after {width: 100%;}
     padding: 0 18px;
 }
 
+@media (max-width: 1168px) {
+    .mainPage {
+        display: none;
+        }
+    .header:before {
+        background-color:  rgba(121, 121, 121, 1);
+        }
+    }
 
-    @media (max-width: 767px){
+@media (max-width: 767px){
         body.lock {
             overflow: hidden;
         }
