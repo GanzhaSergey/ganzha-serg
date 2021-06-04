@@ -60,14 +60,10 @@ h2 {
     text-align: center;
  }
 
- .mouse:hover { 
-    top: 80.5%;
- }
+ .mouse:hover {top: 80.5%;}
 
 
-section {
-    margin: 90px 0;
-}
+section {margin: 90px 0;}
 
 h5 {
     font-size: 22px;
@@ -75,7 +71,7 @@ h5 {
 
 p{
     margin: 14px 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 hr {margin: 18px 0;}
@@ -247,16 +243,9 @@ a:hover:after,a:focus:after {width: 100%;}
 
 
 /*  */
-
-
-
-
-
-
 footer {
     text-align: center;
 }
-
 
 
 .foto {
@@ -272,7 +261,6 @@ footer {
 }
 
 
-
 /* skils spoler */
 .service__content-tabTitle {
     position: relative;
@@ -285,9 +273,6 @@ footer {
     transition: all 0.3s ease 0s;
 }
 
-    /* .service__content-tabTitle.active {
-        margin-bottom: 0;
-    } */
         .service__content-tabTitle.active::before {
             transform: rotate(40deg);
         }
@@ -330,16 +315,13 @@ footer {
 }
 
 /*  */
-
-
 .skills {
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 15px;
     text-align: left;
     padding-left: 12px;
-    color: aliceblue;
-    background: rgb(48, 47, 47);
+    background: #09afdf;
 }
 
 .html_css { width: 30%; }
@@ -351,15 +333,12 @@ footer {
 
 
 /* Ab_me */
-
 #About_Me {
     padding-top: 60px;
 }
     .about__name {
     color: #09afdf;
-    font-size: 28px;
-    padding-bottom: 25px;
-    padding-left: 15px;
+    font-size: 30px;
     }
 
     .title__color {
@@ -369,10 +348,8 @@ footer {
 
     .about__specialist {    
         color: #3f3f3f;
-        font-size: 24px;
-        padding-bottom: 15px;
+        font-size: 22px;
     }
-
 
     .about__content {
         margin: 30px 0;
@@ -406,8 +383,7 @@ footer {
 
 .item-border:hover {
     background-color: rgba(247, 245, 245, 0.075);
-    opacity: 0.7;
-    
+    opacity: 0.7;  
 }
 
 .item-filling {
@@ -507,7 +483,6 @@ footer {
 
     
     /*media*/
-
     @media (max-width: 1120px) {
         .container {
             max-width: 970px;
