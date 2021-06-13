@@ -23,36 +23,7 @@ $(document).ready(function() {
       $(this).toggleClass('active').next().slideToggle(400);
   });
 
-// tabs portfolio
-  $('#tab_1').on('click',function() {
-    $('.tabs__block').css("display", "none");
-    $('#tab__01').css("display", "flex");
-  });
 
-  $('#tab_2').on('click',function() {
-    $('.tabs__block').css("display", "none");
-    $('#tab__02').css("display", "flex");
-  });
-
-  $('#tab_3').on('click',function() {
-    $('.tabs__block').css("display", "none");
-    $('#tab__03').css("display", "flex");
-  });
-
-  $('#tab_4').on('click',function() {
-    $('.tabs__block').css("display", "none");
-    $('#tab__04').css("display", "flex");
-  });
-
-
-// slick_slider
-  $('.slider').slick({
-    arrows:true,
-    dots:true,
-    adaptiveHeight:true,
-    speed:1000,
-    initialSlide:3
-    });
 
 
 // skills
@@ -74,4 +45,71 @@ $('.vue').delay(13000).animate({'width':'40%'},2000);
 
 
 
-  
+  // tabs portfolio
+
+  $('#tab_01').css("display", "flex");
+  $('#tab__02').css("display", "none");
+  $('#tab__03').css("display", "none");
+  $('#tab__04').css("display", "none");
+
+  $('#tab_1').css("background", "#8eaadb");
+  $('#tab_2').css("background", "#d9e2f3");
+  $('#tab_3').css("background", "#d9e2f3");
+  $('#tab_4').css("background", "#d9e2f3");
+
+
+  $('#tab_1').on('click',function() {
+
+    $('#tab_01').css("display", "flex");
+    $('#tab__02').css("display", "none");
+    $('#tab__03').css("display", "none");
+    $('#tab__04').css("display", "none");
+
+    $('#tab_1').css("background", "#8eaadb");
+    $('#tab_2').css("background", "#d9e2f3");
+    $('#tab_3').css("background", "#d9e2f3");
+    $('#tab_4').css("background", "#d9e2f3");
+  });
+
+
+  $('#tab_2').on('click',function() {
+
+    $('#tab_01').css("display", "none");
+    $('#tab_02').css("display", "flex");
+    $('#tab__03').css("display", "none");
+    $('#tab__04').css("display", "none");
+
+    $('#tab_1').css("background", "#d9e2f3");
+    $('#tab_2').css("background", "#8eaadb");
+    $('#tab_3').css("background", "#d9e2f3");
+    $('#tab_4').css("background", "#d9e2f3");
+
+  });
+
+  $('#tab_3').on('click',function() {
+    $('#tab_01').css("display", "none");
+    $('#tab_02').css("display", "none");
+    $('#tab_03').css("display", "flex");
+    $('#tab_04').css("display", "none");
+
+    $('#tab_1').css("background", "#d9e2f3");
+    $('#tab_2').css("background", "#d9e2f3");
+    $('#tab_3').css("background", "#8eaadb");
+    $('#tab_4').css("background", "#d9e2f3");
+  });
+
+  $('#tab_4').on('click',function() {
+    $('#tab_01').css("display", "none");
+    $('#tab_02').css("display", "none");
+    $('#tab_03').css("display", "none");
+    $('#tab_04').css("display", "flex");
+
+    $('#tab_1').css("background", "#d9e2f3");
+    $('#tab_2').css("background", "#d9e2f3");
+    $('#tab_3').css("background", "#d9e2f3");
+    $('#tab_4').css("background", "#8eaadb");
+  });
+
+
+
+
