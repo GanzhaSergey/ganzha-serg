@@ -36,9 +36,6 @@
                                 <a href="#About_Me" class="header__link scrollto">about</a>
                             </li>
                             <li>
-                                <a href="#education" class="header__link scrollto">education</a>
-                            </li>
-                            <li>
                                 <a href="#portfolio" class="header__link scrollto">portfolio</a>
                             </li>
                             <li>
@@ -118,59 +115,19 @@
            
         </section>
         
-        <!--Education-->
-        <section id="education">    
-    <h2>Education</h2>  
-            <div>
-                <p>Years: 2003 - 2009 </p>
-                <hr>
-                <p>University: National Technical University</p>
-                <hr>
-                <p>Degree/Diploma: Computer-System Engineer</p>
-                <hr>
-                <p>Major Sabject: Informatics and Computer Hardware, Flexible Computer-aided system and Robotics</p>
-            </div>
-            <div class="education__img slider">
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_1.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_2.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_3.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_4.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_5.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_6.jpg" alt="university">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/univer/foto_kpi_7.jpg" alt="university">
-                    </div>
-                    
-            </div>
-        </section>  
 
         <!--Portfolio-->
         <section id="portfolio">
             <h2>portfolio</h2>
-
-
-
            
             
             
             <div class="tabs">
-                <nav id="t0" class="tabs-items">
-                    <div id="t01" onclick="tab_01()" class="tabs-item">All works</div>
-                    <div id="t02" onclick="tab_02()" class="tabs-item">LEANDING</div>
-                    <div id="t03" onclick="tab_03()" class="tabs-item">STORE</div>
-                    <div id="t04" onclick="tab_04()" class="tabs-item">Competences</div>
+                <nav class="tabs-items">
+                    <div id="tab_1" class="tabs-item">All works</div>
+                    <div id="tab_2" class="tabs-item">LEANDING</div>
+                    <div id="tab_3" class="tabs-item">STORE</div>
+                    <div id="tab_4" class="tabs-item">JS projets</div>
                 </nav>
             
                 <div class="tabs__body">
@@ -516,58 +473,7 @@
             
                 
             
-            <script>
-                tab_01();
-            
-                function tab_01() {
-                    document.getElementById('tab_01').style.cssText = 'display: flex;';
-                    document.getElementById('t01').style.cssText = 'background: #8eaadb;' ;
-                    document.getElementById('tab_02').style.cssText = 'display: none;';
-                    document.getElementById('t02').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_03').style.cssText = 'display: none;';
-                    document.getElementById('t03').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_04').style.cssText = 'display: none;';
-                    document.getElementById('t04').style.cssText = 'background: #d9e2f3;';
-                }
-            
-                function tab_02() {
-            
-                    document.getElementById('tab_01').style.cssText = 'display: none;';
-                    document.getElementById('t01').style.cssText = 'background: #d9e2f3;' ;
-                    document.getElementById('tab_02').style.cssText = 'display: flex;';
-                    document.getElementById('t02').style.cssText = 'background: #8eaadb;';
-                    document.getElementById('tab_03').style.cssText = 'display: none;';
-                    document.getElementById('t03').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_04').style.cssText = 'display: none;';
-                    document.getElementById('t04').style.cssText = 'background: #d9e2f3;';
-                }
-            
-                function tab_03() {
-                    document.getElementById('tab_01').style.cssText = 'display: none;';
-                    document.getElementById('t01').style.cssText = 'background: #d9e2f3;' ;
-                    document.getElementById('tab_02').style.cssText = 'display: none;';
-                    document.getElementById('t02').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_03').style.cssText = 'display: flex;';
-                    document.getElementById('t03').style.cssText = 'background: #8eaadb;';
-                    document.getElementById('tab_04').style.cssText = 'display: none;';
-                    document.getElementById('t04').style.cssText = 'background: #d9e2f3;';
-                }
-            
-                function tab_04() {
-                    document.getElementById('tab_01').style.cssText = 'display: none;';
-                    document.getElementById('t01').style.cssText = 'background: #d9e2f3;' ;
-                    document.getElementById('tab_02').style.cssText = 'display: none;';
-                    document.getElementById('t02').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_03').style.cssText = 'display: none;';
-                    document.getElementById('t03').style.cssText = 'background: #d9e2f3;';
-                    document.getElementById('tab_04').style.cssText = 'display: flex;';
-                    document.getElementById('t04').style.cssText = 'background: #8eaadb;';
-                }
-                    
-            
-            
-            </script>
-
+           
 
 
 
