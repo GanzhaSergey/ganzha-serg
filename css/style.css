@@ -520,65 +520,7 @@ footer {
 
     
 
-/* slider */
-    .slider {
-        position: relative;
-    }
-    .slider .slick-arrow {
-        position: absolute;
-        top: 50%;
-        z-index: 10;
-        font-size: 0;
-        width: 20px;
-        height: 37px;
-        border:none;
-    }
 
-        .slider .slick-arrow.slick-prev {
-            left: 12px;
-            background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
-
-        }
-        .slider .slick-arrow.slick-next {
-            right: 12px;
-            background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
-        }
-
-    .slick-track {
-        display: flex;
-        align-items: center;
-    }
-    .slick-list {
-        overflow: hidden;
-    }
-
-    .slider__item img {
-        width: inherit;
-        border-radius: 6px;
-    }
-
-    .slider .slick-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .slider .slick-dots li {
-        list-style: none;
-        margin: 0 10px;
-    }
-    .slider .slick-dots button{
-        font-size: 0;
-        width: 10px;
-        height: 10px;
-        background-color:#bebebe;
-        border: 1px solid #bebebe;
-        border-radius: 50%;
-    }
-
-    .slider .slick-dots li.slick-active button {
-        background-color: transparent;
-        border: 1px solid black;
-    } 
 
 
 
@@ -654,4 +596,3 @@ footer {
     #tab__01 {
         display: flex;
     }
-
