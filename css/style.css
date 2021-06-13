@@ -367,11 +367,14 @@ footer {
         }
 
   
-
-.item-filling img{
-    max-height: 150px;
-    margin-bottom: 33px;
-}
+        .item-filling {
+            font-size: 20px;
+            padding: 15%;
+        }
+            .item-filling img{
+                max-height: 120px;
+                margin-bottom: 35px;
+            }
 
 .item-border {
     text-align: center;
@@ -386,10 +389,7 @@ footer {
     opacity: 0.7;  
 }
 
-.item-filling {
-    font-size: 18px;
-    padding: 10%;
-}
+
 
 .calc:hover,.online_store:hover,.lending:hover {
     -webkit-transition:0.3s;
@@ -648,7 +648,7 @@ footer {
 
 .tabs__block-items {
     /* flex-basis: 282px; */
-      flex-basis: 264px;
+      flex-basis: 250px;
 }
 
     #tab__01 {
