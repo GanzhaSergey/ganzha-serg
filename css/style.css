@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    box-sizing:border-box;
 }
 
 body, html {
@@ -61,7 +62,6 @@ h2 {
  }
 
  .mouse:hover {top: 80.5%;}
-
 
 section {margin: 90px 0;}
 
@@ -545,22 +545,22 @@ footer {
     align-items: center;
     background:#d9e2f3;
     border: 0.2px solid rgb(250, 247, 247);
+    cursor: pointer;
 }
 
 
 .tabs-item:hover {
-    background:#8eaadb;
+    background-color: red;
 }
 
 .tabs__block {
-    padding: 20px;
     font-style: 14px;
     line-height: 12px;
     display: none;
     margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -589,10 +589,5 @@ footer {
 }
 
 .tabs__block-items {
-    /* flex-basis: 282px; */
-      flex-basis: 250px;
+      flex-basis: 245px;
 }
-
-    #tab__01 {
-        display: flex;
-    }
