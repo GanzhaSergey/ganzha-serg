@@ -137,6 +137,7 @@ a:hover:after,a:focus:after {width: 100%;}
 }
 .header__list {
     display: flex;
+    align-items: center;
     position: relative;
     z-index: 2;
 }
@@ -148,7 +149,7 @@ a:hover:after,a:focus:after {width: 100%;}
 .header__link {
     color: #fff;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 25px;
     text-decoration: none;
     padding: 0 18px;
 }
