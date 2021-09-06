@@ -46,8 +46,9 @@ $('.vue').delay(13000).animate({'width':'40%'},2000);
   function tabs__work(a,b) {
     $('.tabs__block').css("display", "none");
     $('.tabs-item').css("background", "#d9e2f3");
-    $(a).css("display", "flex");
+    $(a).css({"display": "flex","opacity":"0.1"}).animate({opacity:1},1600);
     $(b).css("background", "#8eaadb");
+
   }
 
   $('#tab_1').on('click',function() { tabs__work('#tab_01','#tab_1'); });
