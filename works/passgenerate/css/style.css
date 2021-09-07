@@ -1,0 +1,25 @@
+.main {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#btn {
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    height: 38px;
+    width: 160px;
+    background: rgb(51, 214, 243);
+    border-radius: 8px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#out {
+    margin-top: 50px;
+    font-size: 22px;
+    color: rgb(2, 76, 88);
+    
+}

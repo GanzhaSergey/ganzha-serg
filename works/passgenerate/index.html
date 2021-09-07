@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 main">
+                <h1>Password generator</h1>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="checkbox">
+                        <input id="input_numbers" type="checkbox" checked>
+                        <label for="input_numbers">numbers</label>
+                    </div>
+
+                    <div class="checkbox">
+                            <input id="input_lower_case" type="checkbox" checked>
+                            <label for="input_lower_case">lower case</label>
+                        </div>
+                
+                    <div class="checkbox">
+                            <input id="input_upper_case" type="checkbox">
+                            <label for="input_upper_case">upper case</label>
+                    </div>
+
+                    <div class="checkbox">
+                            <input id="input_special_characters" type="checkbox">
+                            <label for="input_special_characters">special characters</label>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="input_range">password length (<span id="length">6</span>) </label>
+                        <input id="input_range" class="form-control" type="range" value="6" max="20">
+                    </div>
+                    <button type="button" id="btn">generate</button>
+                    </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="out">
+                     
+                    </div>
+                </div>
+            </div>
+
+            
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
