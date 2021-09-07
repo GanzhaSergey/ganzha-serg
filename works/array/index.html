@@ -9,29 +9,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Array generator</h1>
-        <div class="generator">
-            <div>
-                <label for="length">Length array</label>
-                <input type="text" class="form-control" id="length" value="10">
-            </div>
-            <div>
-                <label for="min"> Min element</label>
-                <input type="text" class="form-control" id="min" value="0">
-            </div>
+    <div class="main">
+        <div class="container">
+            <h1>Array generator</h1>
+            <div class="generator">
                 <div>
-                    <label for="max">Max element</label>
-                    <input type="text" class="form-control" id="max" value="200">
+                    <label for="length">Length array</label>
+                    <input type="text" class="form-control" id="length" value="10">
                 </div>
-        </div>
                 <div>
-                    <button class="btn btn-primary" id="but">Generate</button>
+                    <label for="min"> Min element</label>
+                    <input type="text" class="form-control" id="min" value="0">
                 </div>
-                <div id="out"></div>
+                    <div>
+                        <label for="max">Max element</label>
+                        <input type="text" class="form-control" id="max" value="200">
+                    </div>
             </div>
+                    <div>
+                        <button class="btn btn-primary" id="but">Generate</button>
+                    </div>
+    
+                    <div id="out"></div>
+                </div>
     </div>
-<script src="script.js"></script>
 
 </body>
+
+
+    <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+
+<script src="script.js"></script>
+
 </html>
